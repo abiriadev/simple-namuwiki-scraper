@@ -1,0 +1,20 @@
+version: '3'
+
+tasks:
+  clean:
+    deps:
+      - clean-logs
+      - clean-cache
+      - clean-data
+  clean-logs:
+    cmds:
+      - rm -rf ./logs
+    silent: true
+  clean-cache:
+    cmds:
+      - rm -rf ./.cache
+    silent: true
+  clean-data:
+    cmds:
+      - rm -rf ./w
+    silent: true

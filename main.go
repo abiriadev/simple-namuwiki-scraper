@@ -56,7 +56,7 @@ func main() {
 		colly.AllowedDomains(domain),
 		// colly.URLFilters(w),
 		colly.MaxDepth(0),
-		colly.CacheDir("./cache"),
+		colly.CacheDir("./.cache"),
 	)
 
 	c.OnHTML("a[href]", func(e *colly.HTMLElement) {
