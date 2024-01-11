@@ -16,7 +16,7 @@ import (
 	slogmulti "github.com/samber/slog-multi"
 )
 
-const pD = 0660
+const pD = 0755
 const pF = 0644
 
 var wRegex = regexp.MustCompile("^/w/(.*)")
